@@ -3,12 +3,15 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {
     "quantity": {
       "type": "number"
     }
+  },
+  "mixins": {
+    "TimeStamp": true
   },
   "validations": [],
   "relations": {},

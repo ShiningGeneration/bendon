@@ -3,7 +3,7 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {
     "created": {
@@ -20,6 +20,9 @@
     "store_address": {
       "type": "string"
     }
+  },
+  "mixins": {
+    "TimeStamp": true
   },
   "validations": [],
   "relations": {},

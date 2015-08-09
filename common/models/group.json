@@ -3,9 +3,12 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {},
+  "mixins": {
+    "TimeStamp": true
+  },
   "validations": [],
   "relations": {},
   "acls": [],

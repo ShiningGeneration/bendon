@@ -3,11 +3,14 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {
     "is_public": {
       "type": "boolean"
+    },
+    "name": {
+      "type": "string"
     },
     "address": {
       "type": "string"
@@ -15,6 +18,9 @@
     "phone": {
       "type": "string"
     }
+  },
+  "mixins": {
+    "TimeStamp": true
   },
   "validations": [],
   "relations": {},
