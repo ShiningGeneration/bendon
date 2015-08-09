@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": false
   },
+  "mixins": {
+    "TimeStamp": true
+  },
   "properties": {
     "created": {
       "type": "date",
@@ -20,9 +23,6 @@
     "store_address": {
       "type": "string"
     }
-  },
-  "mixins": {
-    "TimeStamp": true
   },
   "validations": [],
   "relations": {},

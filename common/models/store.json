@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": false
   },
+  "mixins": {
+    "TimeStamp": true
+  },
   "properties": {
     "is_public": {
       "type": "boolean"
@@ -19,11 +22,9 @@
       "type": "string"
     }
   },
-  "mixins": {
-    "TimeStamp": true
-  },
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {},
+  "dataSource": "mongo"
 }

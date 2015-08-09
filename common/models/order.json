@@ -5,13 +5,13 @@
   "options": {
     "validateUpsert": false
   },
+  "mixins": {
+    "TimeStamp": true
+  },
   "properties": {
     "quantity": {
       "type": "number"
     }
-  },
-  "mixins": {
-    "TimeStamp": true
   },
   "validations": [],
   "relations": {},

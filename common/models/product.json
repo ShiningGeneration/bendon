@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": false
   },
+  "mixins": {
+    "TimeStamp": true
+  },
   "properties": {
     "name": {
       "type": "string",
@@ -16,9 +19,6 @@
     "note": {
       "type": "string"
     }
-  },
-  "mixins": {
-    "TimeStamp": true
   },
   "validations": [],
   "relations": {},

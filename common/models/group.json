@@ -5,10 +5,10 @@
   "options": {
     "validateUpsert": false
   },
-  "properties": {},
   "mixins": {
     "TimeStamp": true
   },
+  "properties": {},
   "validations": [],
   "relations": {},
   "acls": [],

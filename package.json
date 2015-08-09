@@ -13,7 +13,8 @@
     "loopback-boot": "^2.6.5",
     "loopback-datasource-juggler": "^2.19.0",
     "serve-favicon": "^2.0.1",
-    "loopback-ds-timestamp-mixin": "~3.2.2"
+    "loopback-ds-timestamp-mixin": "~3.2.2",
+    "loopback-connector-mongodb": "~1.13.0"
   },
   "optionalDependencies": {
     "loopback-explorer": "^1.1.0"

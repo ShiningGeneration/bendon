@@ -38,7 +38,7 @@
     "public": true
   },
   "Store": {
-    "dataSource": "db",
+    "dataSource": "mongo",
     "public": true
   },
   "Product": {
