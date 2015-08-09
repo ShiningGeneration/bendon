@@ -31,5 +31,25 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Group": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Store": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "db",
+    "public": true
   }
 }
