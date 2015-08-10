@@ -6,7 +6,8 @@
     "validateUpsert": false
   },
   "mixins": {
-    "TimeStamp": true
+    "TimeStamp": true,
+    "Creator": true
   },
   "properties": {},
   "validations": [],
