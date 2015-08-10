@@ -25,7 +25,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": ""
+    },
+    "members": {
+      "type": "hasMany",
+      "model": "User",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

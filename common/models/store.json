@@ -8,6 +8,7 @@
   "mixins": {
     "TimeStamp": true
   },
+  "dataSource": "mongo",
   "properties": {
     "is_public": {
       "type": "boolean"
@@ -23,8 +24,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
-  "methods": {},
-  "dataSource": "mongo"
+  "methods": {}
 }
