@@ -7,11 +7,17 @@
   },
   "mixins": {
     "TimeStamp": true,
-    "Creator": true
+    "Owner": true
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "onwerId"
+    }
+  },
   "acls": [],
-  "methods": {}
+  "methods": []
 }

@@ -6,7 +6,8 @@
     "validateUpsert": false
   },
   "mixins": {
-    "TimeStamp": true
+    "TimeStamp": true,
+    "Owner": true
   },
   "properties": {
     "created": {
@@ -35,8 +36,13 @@
       "type": "hasMany",
       "model": "User",
       "foreignKey": ""
+    },
+    "owner": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "onwerId"
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": []
 }
