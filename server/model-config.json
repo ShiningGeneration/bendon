@@ -15,42 +15,42 @@
     ]
   },
   "User": {
-    "dataSource": "mongo"
+    "dataSource": "db"
   },
   "AccessToken": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": false
   },
   "ACL": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": false
   },
   "Role": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": false
   },
   "Group": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": true
   },
   "Store": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": true
   },
   "Product": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": true
   },
   "Event": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": true
   },
   "Order": {
-    "dataSource": "mongo",
+    "dataSource": "db",
     "public": true
   }
 }

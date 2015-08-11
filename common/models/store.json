@@ -9,7 +9,6 @@
     "TimeStamp": true,
     "Owner": true
   },
-  "dataSource": "mongo",
   "properties": {
     "is_public": {
       "type": "boolean"
