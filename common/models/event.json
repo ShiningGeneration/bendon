@@ -9,11 +9,7 @@
     "TimeStamp": true
   },
   "properties": {
-    "created": {
-      "type": "date",
-      "required": true
-    },
-    "ended": {
+    "endedAt": {
       "type": "date",
       "required": true
     },
