@@ -6,7 +6,8 @@
     "validateUpsert": false
   },
   "mixins": {
-    "TimeStamp": true
+    "TimeStamp": true,
+    "Owner": true
   },
   "dataSource": "mongo",
   "properties": {
@@ -29,8 +30,13 @@
       "type": "hasMany",
       "model": "Product",
       "foreignKey": ""
+    },
+    "owner": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "onwerId"
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": []
 }

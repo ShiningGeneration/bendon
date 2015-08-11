@@ -2,5 +2,11 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongo": {
+    "host": "localhost",
+    "database": "bendon",
+    "name": "mongo",
+    "connector": "mongodb"
   }
 }
