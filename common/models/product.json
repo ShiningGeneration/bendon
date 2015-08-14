@@ -18,6 +18,12 @@
     },
     "note": {
       "type": "string"
+    },
+    "modifiers": {
+      "type": [{
+        "name":"string",
+        "price":"number"
+      }]
     }
   },
   "validations": [],

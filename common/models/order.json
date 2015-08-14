@@ -11,6 +11,9 @@
   "properties": {
     "quantity": {
       "type": "number"
+    },
+    "price": {
+      "type": "number"
     }
   },
   "validations": [],
