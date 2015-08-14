@@ -10,6 +10,9 @@
     "Owner": true
   },
   "properties": {
+    "name": {
+      "type": "string"
+    },
     "endedAt": {
       "type": "date",
       "required": true
