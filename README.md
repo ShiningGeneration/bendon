@@ -16,6 +16,13 @@ node .
 
 Then open http://0.0.0.0:3000/explorer to explore the REST APIs
 
+##Populate the server with test data
+
+```
+node_modules/jasmine-node/bin/jasmine-node test/
+```
+It will run `test/populate_ref_workload.js`
+
 
 ##Connecting to MongoDB backend
 
