@@ -10,7 +10,7 @@
     "Owner": true
   },
   "properties": {
-    "is_public": {
+    "isPublic": {
       "type": "boolean"
     },
     "name": {

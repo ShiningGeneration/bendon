@@ -17,10 +17,10 @@
       "type": "date",
       "required": true
     },
-    "store_name": {
+    "storeName": {
       "type": "string"
     },
-    "store_address": {
+    "storeAddress": {
       "type": "string"
     }
   },
