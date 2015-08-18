@@ -1,5 +1,5 @@
 {
-  "name": "EventProduct",
+  "name": "EventProducts",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

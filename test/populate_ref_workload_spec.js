@@ -64,6 +64,39 @@ var createStore = function(apikey) {
       })
 }
 
+var createEvent = function(apikey) {
+    return frisby.create('Create Event')
+      .post(base_url + "Events/" + "?access_token=" + apikey, 
+            {
+              name: "Mon. - 津鮮蝦卷",
+              endedAt: new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
+              
+            }, 
+            {json:true})
+      .expectStatus(200)
+      .inspectJSON()
+      .expectJSONTypes('', {
+        name: String,
+      })
+      .afterJSON(function(resp){
+        //TODO: get store first
+        for (var pid = 1; i < 3; i++){
+          frisby.create('Add Products to Event')
+            .put(base_url + "Events/" + resp.id + "/products/rel/" + pid + "?access_token=" + apikey, 
+                  {
+                  }, 
+                  {json:true})
+            .expectStatus(200)
+            //.inspectJSON()
+            .expectJSONTypes('', {
+              name: String,
+            })
+            .toss()
+
+        }
+      })
+}
+
 
 
 frisby.create('Add a user')
@@ -79,7 +112,11 @@ frisby.create('Add a user')
 
       login()
       .afterJSON(function(resp){
-        createStore(resp.id).toss()
+        var apikey = resp.id
+        createStore(apikey).
+          afterJSON(function(resp){
+            createEvent(apikey).toss()
+        }).toss()
         //console.log(resp)
       })
       .toss();

@@ -53,8 +53,8 @@
     "dataSource": "db",
     "public": true
   },
-  "EventProduct": {
+  "EventProducts": {
     "dataSource": "db",
-    "public": true 
+    "public": true
   }
 }
