@@ -6,7 +6,8 @@
     "validateUpsert": false
   },
   "mixins": {
-    "TimeStamp": true
+    "TimeStamp": true,
+    "Duplicate": true
   },
   "properties": {
     "name": {
@@ -20,14 +21,22 @@
       "type": "string"
     },
     "modifiers": {
-      "type": [{
-        "name":"string",
-        "price":"number"
-      }]
+      "type": [
+        {
+          "name": "string",
+          "price": "number"
+        }
+      ]
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": []
 }
