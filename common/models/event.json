@@ -29,7 +29,8 @@
     "products": {
       "type": "hasMany",
       "model": "Product",
-      "foreignKey": ""
+      "foreignKey": "",
+      "through": "EventProducts"
     },
     "members": {
       "type": "hasMany",
@@ -43,5 +44,5 @@
     }
   },
   "acls": [],
-  "methods": []
+  "methods": {}
 }

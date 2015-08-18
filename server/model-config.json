@@ -52,5 +52,9 @@
   "Order": {
     "dataSource": "db",
     "public": true
+  },
+  "EventProduct": {
+    "dataSource": "db",
+    "public": true 
   }
 }
