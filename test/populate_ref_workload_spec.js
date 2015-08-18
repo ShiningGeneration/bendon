@@ -80,7 +80,7 @@ var createEvent = function(apikey) {
       })
       .afterJSON(function(resp){
         //TODO: get store first
-        for (var pid = 1; i < 3; i++){
+        for (var pid = 1; pid < 3; pid++){
           frisby.create('Add Products to Event')
             .put(base_url + "Events/" + resp.id + "/products/rel/" + pid + "?access_token=" + apikey, 
                   {
@@ -88,14 +88,12 @@ var createEvent = function(apikey) {
                   {json:true})
             .expectStatus(200)
             //.inspectJSON()
-            .expectJSONTypes('', {
-              name: String,
-            })
             .toss()
 
         }
       })
 }
+
 
 
 

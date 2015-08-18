@@ -7,7 +7,18 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "event": {
+      "type": "belongsTo",
+      "model": "Event",
+      "foreignKey": ""
+    },
+    "product": {
+      "type": "belongsTo",
+      "model": "Product",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
