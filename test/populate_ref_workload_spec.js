@@ -94,6 +94,22 @@ var createEvent = function(apikey) {
       })
 }
 
+var createOrder = function(apikey) {
+    return frisby.create('Create Order')
+      .post(base_url + "Orders/" + "?access_token=" + apikey, 
+            {
+              productId:1,
+              price:100,
+              quantity:2
+              
+            }, 
+            {json:true})
+      .expectStatus(200)
+      .inspectJSON()
+      .expectJSONTypes('', {
+        quantity: Number,
+      })
+}
 
 
 
@@ -111,15 +127,15 @@ frisby.create('Add a user')
       login()
       .afterJSON(function(resp){
         var apikey = resp.id
-        createStore(apikey).
-          afterJSON(function(resp){
-            createEvent(apikey).toss()
+        createStore(apikey)
+        .afterJSON(function(resp){
+          createEvent(apikey)
+          .afterJSON(function(resp){
+            createOrder(apikey).toss()
+          }).toss()
         }).toss()
-        //console.log(resp)
-      })
-      .toss();
-  })
-  .toss();
+      }).toss();
+  }).toss();
 
 /*
  Populate reference workload
