@@ -19,9 +19,12 @@ Then open http://0.0.0.0:3000/explorer to explore the REST APIs
 ##Populate the server with test data
 
 ```
-node_modules/jasmine-node/bin/jasmine-node test/
+sudo npm install -g jasmine-node
+jasmine-node test/
 ```
 It will run `test/populate_ref_workload.js`
+
+If you encounter error, restart the dev server.
 
 
 ##Connecting to MongoDB backend
